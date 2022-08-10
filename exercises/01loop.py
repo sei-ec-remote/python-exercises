@@ -13,3 +13,9 @@
 # > Hello there
 # > Hello there
 # > Hello there
+
+def p_times(phrase, number):
+    print(f'{phrase}\n' * number)
+
+p_times('Hello there', 1)
+p_times('Hello there', 3)

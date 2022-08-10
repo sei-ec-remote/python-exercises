@@ -12,7 +12,7 @@
 #
 #
 # Careful. Python requires that you insert a key into a dictionary
-# before you try to modify it's value. If you try to access a dictionary
+# before you try to modify its value. If you try to access a dictionary
 # at a key that hasn't been added you'll get an error and the program will
 # crash. Remember to use an if statement to see if a key is "in" a dictionary
 # before you try to read it!
@@ -26,3 +26,15 @@
 # letter_count('banana')
 #
 # > {'a': 3, 'b': 1, 'n': 2}
+
+def letter_count(word):
+    dd = {}
+    for letter in word:
+        if letter in dd:
+            dd[letter] += 1
+        else:
+            dd[letter] = 1
+    print(dd)
+
+letter_count('apple')
+letter_count('banana')
