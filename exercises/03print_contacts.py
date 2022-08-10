@@ -5,10 +5,6 @@
 # Try iterating over a dictionary with a for loop and printing
 # out what values come back.
 #
-# Example function call:
-#
-# print_contacts(contacts)
-#
 # > Brian has a phone number of 333-333-3333
 # > Lenny has a phone number of 444-444-4444
 # > Daniel has a phone number of 777-777-7777
@@ -20,3 +16,11 @@ contacts = {
   'Lenny': '444-444-4444',
   'Daniel': '777-777-7777'
 }
+
+def print_contacts(contact_list):
+  for contact in contact_list:
+    print(f"{contact}'s phone number is {contact_list[contact]}")
+
+# Example function call:
+#
+print_contacts(contacts)
