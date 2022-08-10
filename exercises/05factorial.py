@@ -9,3 +9,18 @@
 #
 # > 120
 #
+def factorial(num):
+    product = 1
+    for i in range(1, num+1):
+        product *= i
+    print(product)
+
+factorial(5)
+
+# def factorial(num):
+#     if num == 1:
+#         return 1
+#     else:
+#         return (num) * factorial(num - 1)
+
+# print(factorial(5))
