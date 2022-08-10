@@ -10,3 +10,19 @@
 # multiply_by([1, 2, 3], 5)
 #
 # > [5, 10, 15]
+
+def multiply_by(list,multiplier):
+    new_list = [number * multiplier for number in list]
+    print(new_list) 
+
+#  OR CAN SOLVE WITH
+
+def multiply_by_v2(list,multiplier):
+    new_list = []
+    for number in list:
+        new_list.append(number * multiplier)
+    print(new_list)
+
+multiply_by([1, 2, 3], 5)
+print('-' * 20)
+multiply_by_v2([1, 2, 3], 5)
