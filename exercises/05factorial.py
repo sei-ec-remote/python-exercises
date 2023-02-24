@@ -9,3 +9,12 @@
 #
 # > 120
 #
+
+def factorial(n):
+    # iterate from 1 up to the number passed in
+    for i in range(1, n+1):
+        j = i * i
+        j *= i
+    print(j)
+
+factorial(5)
